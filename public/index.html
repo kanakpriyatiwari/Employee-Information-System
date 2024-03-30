@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information System</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- HOMEPAGE CONTAINING NAV BAR AND WELCOME MESSAGE -->
+
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light  background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color:#8ACDD7; /* Blue background color for the navigation bar */
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            color: #072541; /*  text colour for the brand */
+            font-size: 24px;
+        }
+
+        .navbar-brand:hover {
+            text-decoration: none; /* Remove underline on hover */
+            color: #072541;
+        }
+
+        .navbar-nav .nav-link {
+            color: #072541; /* color text for links */
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid #071952; /*  underline on hover */
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color:#072541; /* Blue heading color */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff; /* White background for the center */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        p {
+            font-size: 18px;
+            color: #0c0b0b; /* Dark gray text */
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-light" style="height: 60px;">
+        <div class="container">
+            <a class="navbar-brand" href="/" style="font-size: 25px;">Employee Information System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: 30px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/showEmp">SHOW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/insertEmp">INSERT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/searchEmp">SEARCH</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container center" style="margin-top: 50px;">
+        <h1>Empower Your Workforce Management</h1>
+        <p>Welcome to a streamlined platform for managing employee information. Easily explore existing data, insert new records, and find specific information.</p>
+    </div>
+</body>
+</html>
